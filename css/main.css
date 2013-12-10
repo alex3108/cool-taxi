@@ -45,6 +45,9 @@ li {
     float:left;
 	border:groove;
 }
+#space {
+	top-margin: 25px;
+}
 table {
 	   width: 450px;
 	   align: center;
