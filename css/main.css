@@ -47,7 +47,7 @@ li {
 }
 table {
 	   width: 450px;
-	   align: center;
+	   text-align: center;
 	   background: #0CA0DE;
 	   -moz-box-shadow: 5px 5px 5px #FFF;
 	   -webkit-box-shadow: 5px 5px 5px #FFF;
