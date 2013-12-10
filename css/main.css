@@ -2,8 +2,8 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	max-width: 960px;
 	margin: 36px auto;
-	background-color: #000;
-	background-repeat: no-repeat;
+	background-image: url(../images/taxi%20backgroung.jpg);
+	background-repeat: repeat;
 	text-align: center;
 	font-size: 16px;
 }
@@ -25,16 +25,17 @@ h2 {
 	color: #1AB263;
 	font-size: 24px;
 }
+h3{
+	text-shadow: 1px 1px #FFFFFF;
+}
 p {
 	color: #FFF;
 	text-align: center;
-	text-shadow: 3px 3px #000;
 }
 ul {
 	width: 960px;
 	margin: 0 auto;
 	list-style-type: none;
-	
 }
 li {
 	font-size: large;
@@ -43,7 +44,6 @@ li {
 	margin: 0 auto;
 	background: #0CA0DE;
     float:left;
-	border:groove;
 }
 table {
 	   width: 450px;
@@ -55,34 +55,37 @@ table {
 }
 #pictures {
 	      background:#FFF;
-		  -moz-box-shadow: 5px 5px 5px #FFF;
-	      -webkit-box-shadow: 5px 5px 5px #FFF;
-	      box-shadow: 5px 5px 5px #FFF;
-		  width:900px;
-		  float:left;
-		  width:auto
+          border: 5px solid #FFF;
+		
+		  width: auto;
+}
+img {
+	
+}
+#taxis {
+	   border: 5px solid #FFF;
 }	
 a:link {
 		color: #000;
 		text-align: center;
 		text-decoration: none;
 		text-align: center;
-		opacity:  1px 1px #FFFFFF;
+		opacity: 0.4;
+        filter: alpha(opacity=40);
 }
 a:visited {
 			color: #000;
 }
 a:hover {
 			color: #FFF;
+			opacity: 1.0;
+            filter: alpha(opacity=100);
+		 
 }
 a:active {
 			color: #FFF;
-		
 }
 footer {
-		text-align:center;
+		text-align: center;
 		color: #0CA0DE;
 }
-img {
-	border:dashed;
-	}
