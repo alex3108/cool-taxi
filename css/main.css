@@ -1,35 +1,37 @@
 body {
-	    background-color:#000;
-		background-repeat:no-repeat;
-		text-align:center;
-		font-size:16px;
+	font-family: Tahoma, Geneva, sans-serif;
+	max-width: 960px;
+	margin: 36px auto;
+	background-color: #000;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 16px;
 }
-header {
-		font-family: Tahoma, Geneva, sans-serif;
-		font-style:oblique;
-		text-align: left;
-}
-.wrapper { 
- 		text-align: center;
+#wrapper {
+	text-align: left;
+	width: 100%; /*960px*/
+	margin: 0 auto;
 }
 h1 {
 	color: #0CA0DE;
 	font-family: Georgia;
+	font-style: oblique;
 	text-align: center;
-	font-size:36px;
-	text-shadow: 2px 2px #FFFFFF;
+	font-size: 36px;
+	text-shadow: 1px 1px #FFFFFF;
 	}
-h2 { 
-    text-align:center; 
+h2 {
+	text-align: center;
 	color: #1AB263;
 	font-size: 24px;
 }
 p {
 	color: #FFF;
+	text-align: center;
+	text-shadow: 3px 3px #000;
 }
 ul {
-	width: 1000px;
-	
+	width: 960px;
 	margin: 0 auto;
 	list-style-type: none;
 	
@@ -37,41 +39,50 @@ ul {
 li {
 	font-size: large;
 	text-align: center;
-	width: 200px;
+	width: 180px;
 	margin: 0 auto;
 	background: #0CA0DE;
     float:left;
+	border:groove;
 }
-#list { color:#FFF;
-	   width: auto;
-}
-#rates {
-	   text-align:center;
-	   width:1000px;
-	   color:#FFF;
-	   float:none;
+table {
+	   width: 450px;
+	   align: center;
+	   background: #0CA0DE;
+	   -moz-box-shadow: 5px 5px 5px #FFF;
+	   -webkit-box-shadow: 5px 5px 5px #FFF;
+	   box-shadow: 5px 5px 5px #FFF;	   
 }
 #pictures {
-	      border-color:#FFF;
-		  border-top-width:thick;
-}
+	      background:#FFF;
+		  -moz-box-shadow: 5px 5px 5px #FFF;
+	      -webkit-box-shadow: 5px 5px 5px #FFF;
+	      box-shadow: 5px 5px 5px #FFF;
+		  width:900px;
+		  float:left;
+		  width:auto
+}	
 a:link {
-		color: #FFF;
-		text-align:center;
+		color: #000;
+		text-align: center;
 		text-decoration: none;
-		text-align:center;
+		text-align: center;
+		opacity:  1px 1px #FFFFFF;
 }
 a:visited {
-			color:#FFF;
-}
-a:hover {
 			color: #000;
 }
+a:hover {
+			color: #FFF;
+}
 a:active {
-			color:#FFF;
+			color: #FFF;
 		
 }
 footer {
 		text-align:center;
 		color: #0CA0DE;
 }
+img {
+	border:dashed;
+	}

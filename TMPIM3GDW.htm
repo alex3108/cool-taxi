@@ -2,16 +2,98 @@
 <html lang="en">
 	<head>
 	<meta charset="utf-8"/>
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" title="Disabled for Preview-in-Browser: css/main.css">
+<style type="text/css">
+
+body {
+	    font-family: Tahoma, Geneva, sans-serif;
+		max-width: 960px;
+		margin: 36px auto;
+		background-color:#000;
+		background-repeat: no-repeat;
+		text-align: center;
+		font-size: 16px;
+}
+#wrapper { 
+ 		text-align: center;
+		width: 100%; /*900px*/
+		margin: 0 auto;
+		background: #0F3;		
+}
+h1 {
+	color: #0CA0DE;
+	font-family: Georgia;
+	font-style: oblique;
+	text-align: center;
+	font-size: 36px;
+	text-shadow: 2px 2px #FFFFFF;
+	}
+h2 { 
+    text-align: center; 
+	color: #1AB263;
+	font-size: 24px;
+}
+p {
+	color: #FFF;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+}
+ul {
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	
+}
+li {
+	font-size: large;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	background: #0CA0DE;
+    float:left;
+}
+table {
+	   width: 450px;
+	   align: center;
+	   background: #0CA0DE;
+}
+#pictures {
+	      border-color:#FFF;
+		  border-top-width: thick;
+		  float:left;
+}
+a:link {
+		color: #FFF;
+		text-align: center;
+		text-decoration: none;
+		text-align: center;
+}
+a:visited {
+			color:#FFF;
+}
+a:hover {
+			color: #000;
+}
+a:active {
+			color:#FFF;
+		
+}
+footer {
+		text-align:center;
+		color: #0CA0DE;
+}
+
+
+
+</style>
 		<title>Home</title>
 	</head>
 		<body>
         	<header> 
 	  			 <div id= "wrapper">
-								 <img src="images/cool taxi logo.png" width="80" height="80">
+								<img src="images/cool taxi logo.png" width="80" height="80">
                     		<h1>Cool Taxi</h1>  
                          <nav>
-                             <aside>
                                     <ul>
                                         <li><strong><a href="#home">Home</a></strong></li>
                                         <li><strong><a href="#private minivans">Private Minivans</a></strong></li>
@@ -19,27 +101,27 @@
                                         <li><strong><a href="#rates & charges">Rates &amp; Charges</a></strong></li>
                                         <li><strong><a href="#contact">Contact</a></strong></li>	
                                     </ul>
-                            </aside>
                		   </nav>
       		</header>
                  <div id= "home">
              <section> 
-       		   <article>
                
-        			  <br>	<h2><em>Anywhere &amp; Anytime</em></h2>
+        		        			<br>	<h2><em>Anywhere &amp; Anytime</em></h2>
      			   		 <img src="images/cool taxi.png" width="299" height="227">
                   				<P>Cool Taxi is dedicated to providing you with a stress free airport transfer.<br>
                                   We offer late model luxury SUVs and vans.<br>
-                 All vehicles are smoke-free and GPS equiped to get you to your destination without delay.<br></p>
-            		
+                                  All vehicles are smoke-free and GPS equiped to get you to your destination without delay.<br></p>
+            <aside>			
 						<img src="images/yellow taxi.png" width="299" height="158">
-            	
+            	<article>
                 			<p>Finding you driver is easy, we can meet you at your baggage claim and escort you to <br>
                                your vehicle. Personal service is the difference!<br>
-                               Whether you're a tourist, business traveler, or a local, you can't go wrong with our friendly and courteous 			                               service.<br> Thank-you for using Cool Taxi.</p>                 
+                               Whether you're a tourist, business traveler, or a local, you can't go wrong with our friendly and courteous 			                               service.<br> Thank-you for using Cool Taxi.</p>
+       			</article>
+            </aside>
           			  <div id= "private minivans"> 
                				 <h1>Private Minivans</h1>
-                  
+             <section>       
                                 <p>Personalised mobility services in Florida<br>
                                       Transfers, city tours, out of town sightseeing<br>
                                       Forget about group tours<br>
@@ -48,22 +130,14 @@
                                       Air conditioned vehicles<br>
                   					 Licensed drivers and insured/legal vehicles</p>
                                     <p>COOL TAXI VAN will make your stay in Florida an unforgetable experience</p>
+                                    <p>&nbsp;</p>
                             <img src="images/grey van.jpg" width="299" height="224">
      	  <div id= "gallery">
         		<h1>Gallery</h1>
-        <ul id= "gallery">
-        										<li id= "pictures"><a href="images/red taxi.jpg"><img src="images/red taxi.jpg" width="200" height="120"></a> <a href="images/corvett taxi.jpg"><img src="images/corvett taxi.jpg" width="200" height="120"></a> <a href="images/Ferrari taxi.jpg"><img src="images/porsche taxi.jpg" width="200" height="120"></a> <img src="images/Ferrari taxi.jpg" width="200" height="120"> </li>
-                            					<li id= "pictures"> </li>
-                                                <li id= "pictures"></li>
-                                                <li id= "pictures"></li>
-                           </ul>  
-               </article>
-        </section>                                      
-        <div id= "rates &amp; charges">
-        
-       		<h1>&nbsp;</h1>
-       		<h1>&nbsp;</h1>
-   		<p>&nbsp;</p>
+        										<img src="images/red taxi.jpg" width="200" height="120">
+                            					<img src="images/Ferrari taxi.jpg" width="200" height="120">
+                                                <img src="images/porsche taxi.jpg" width="200" height="120">
+                                                <img src="images/corvett taxi.jpg" width="200" height="133">       
        		<h1>Rates &amp; Charges</h1>
         		 <table align="center">
                                            <th><p>Orlando</p>
@@ -90,8 +164,8 @@
                                                <p> $55 to	$69</p>
                                                <p> $59 to	$79</p>
                                                <p>&nbsp;</p></th>
-	    </table>                                            
-	    <div id= "contact">
+        		 </table>                                            
+       				 <div id= "contact">
          					 <h1>Contact</h1>
 
                                     <p>COOL TAXI VAN<br>
@@ -108,6 +182,7 @@
                                       www.cooltaxi.net</p>
                                     <p>COOL TAXI<br>
                                         AXI COOLI</p>
+    	 </section>
     		 </div>
 				<footer>
  							 &copy; 2013 cooltaxi.com
