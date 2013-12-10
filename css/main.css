@@ -46,11 +46,11 @@ li {
 	border:groove;
 }
 #space {
-	top-margin: 75px;
+	margin-top: 75px;
 }
 table {
 	   width: 450px;
-	   align: center;
+	   text-align: center;
 	   background: #0CA0DE;
 	   -moz-box-shadow: 5px 5px 5px #FFF;
 	   -webkit-box-shadow: 5px 5px 5px #FFF;
@@ -70,7 +70,6 @@ a:link {
 		text-align: center;
 		text-decoration: none;
 		text-align: center;
-		opacity:  1px 1px #FFFFFF;
 }
 a:visited {
 			color: #000;
