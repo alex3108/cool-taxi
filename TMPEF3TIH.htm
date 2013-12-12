@@ -20,7 +20,6 @@ body {
 	margin: 0 auto;
 }
 section {
-	width: auto;
 	margin-left: 1.1111111%; /*10px/900px*/ 
 }
 h1 {
@@ -50,7 +49,7 @@ ul {
 	list-style-type: none;
 }
 li {
-	font-size: large;
+	font-size: 1em; /*16px*/
 	text-align: center;
 	width: 16.66666%;/*160px/960px*/	
 	margin: 0 auto;
@@ -75,12 +74,15 @@ table {
 #pictures {
 	      background:#FFF;	 
 		  height: auto;
-		  float: left;
 		  width: 20.83333%; /*200px/960px*/		
 }
-#pictures img {
+#logo {
+	  width: 8.33333%; /*80px/960px*/	
+}
+img {
 	         max-width: 100%;
 }
+
 #taxis {
 	    border:5px solid  #FFF;
 		text-shadow: 3px 3px #000;
@@ -114,25 +116,27 @@ footer {
 	/*=Media Queries
 ==========================================================================================*/
    /*Table Portrait size to standard 960 (devices and browsers)*/
-   @media screen and (min-width:768px) and (max-width:959px){
-    #wrapper { background-color: #1b1b1b;}
+    @media screen and (min-width:768px) and (max-width:959px){
+    #wrapper { background-color: #925529;}
 	 p.test { font-family: Tahoma, Geneva, sans-serif;}
 	 body { background-image: url(images/taxi%20backgroungcolor1.jpg);  }
 	}
 	
     /*Mobile Landscape Size to Tablet Portrait (devices and browsers)*/
 	@media screen and (min-width: 480px) and (max-width:767px) {	
-    #wrapper { background-color: #2d2d2d;}
+    #wrapper { background-color: #51311D;}
 	body { background-image:url(images/taxi%20backgroungcolor2.jpg);}
 	.content { float: left;}
   }
    
      /*Mobile Portrait Size to TMobile Landscape Size (devices and browsers)*/
 	 @media only screen and (max-width:479px){
-    #wrapper { background-color: #2f2e2e;}
+    #wrapper { background-color: #724320;}
 	body { background-image: url(images/taxibackgroung.3jpg.jpg);}
-	.social_icons { display: none}
+	.social_icons { display: none;}
+	 list { float: none;}
 	}
+
 	
 	
      
@@ -144,15 +148,15 @@ footer {
 		<body>
         	<header> 
 	  			 <div id= "wrapper">
-	  			 		<img src="images/cooltaxilogo.png" width="80" height="80">
+	  			 		<img id="logo" src="images/cooltaxilogo.png" alt="logo" >
 	 			 <h1>Cool Taxi</h1>  
                              <nav>
                              <aside>
                                     <ul>
                                         <li><strong><a href="#home">Home</a></strong></li>
-                                        <li><strong><a href="#private minivans">Private Minivans</a></strong></li>
+                                        <li><strong><a href="#minivans">Minivans</a></strong></li>
                                          <li><strong><a href="#gallery">Gallery</a></strong></li>
-                                        <li><strong><a href="#rates & charges">Rates &amp; Charges</a></strong></li>
+                                        <li><strong><a href="#rates">Rates</a></strong></li>
                                         <li><strong><a href="#contact">Contact</a></strong></li>	
                                     </ul>
                             </aside>
@@ -163,11 +167,11 @@ footer {
              <section> 
        		  		 <article>  
                                		 	<br><h2><em>Anywhere &amp; Anytime</em></h2>
-                                 <img id="taxis"src="images/cooltaxi.png" width="" height="">
+                                 <img id="taxis" src="images/cooltaxi.png" alt="cool taxi" >
                                          <P>Cool Taxi is dedicated to providing you with a stress free airport transfer.<br>
                                          We offer late model luxury SUVs and vans.<br>
                                         All vehicles are smoke-free and GPS equiped to get you to your destination without delay.<br></p>
-                             	 <img id="taxis"src="images/yellowtaxi.png" width="299" height="158">
+                             	 <img id="taxis" src="images/yellowtaxi.png" alt="yellow taxi" >
                                         <p>Finding you driver is easy, we can meet you at your baggage claim and escort you to <br>
                                         your vehicle. Personal service is the difference!<br>
                                           Whether you're a tourist, business traveler, or a local, you can't go wrong with our friendly and courteous service.<br> 
@@ -175,8 +179,8 @@ footer {
                     </article> 
                </section>
                 	 </div>                                            
-          		  	<div id= "private minivans"> 
-                                          		   <h1>Private Minivans</h1>       
+          		  	<div id= "minivans"> 
+                                          		   <h1>Minivans</h1>       
       															  <p>Personalised mobility services in Florida<br>
                                                                   Transfers, city tours, out of town sightseeing<br>
                                                                   Forget about group tours<br>
@@ -185,20 +189,21 @@ footer {
                                                                   Air conditioned vehicles<br>
                                                                   Licensed drivers and insured/legal vehicles</p>
                                                                 <p>COOL TAXI VAN will make your stay in Florida an unforgetable experience</p>
-       													 <img id="taxis"src="images/greyvan.jpg" width="" height="">
+       													 <img id="taxis" src="images/greyvan.jpg" alt="grey van" >
                     	</div>
                 	<div id= "gallery">
 						<h1>Gallery</h1>
                          <aside>
        									 <ul>
-                                                      <li id= "pictures"><a href="images/redtaxi.jpg"><img src="images/redtaxi.jpg" width="" height=""></a></li> 
-                                                      <li id= "pictures"><a href="images/corvetttaxi.jpg"><img src="images/corvetttaxi.jpg" width="" height=""></a></li> 
-                                                      <li id= "pictures"><a href="images/porschetaxi.jpg"><img src="images/porschetaxi.jpg" width="" height=""></a></li>                                                      <li id= "pictures"><a href="images/Ferraritaxi.jpg"><img src="images/Ferraritaxi.jpg" width="" height=""></a></li>
+                                                      <li id= "pictures"><a href="images/redtaxi.jpg"><img src="images/redtaxi.jpg" alt="red taxi"  ></a></li> 
+                                                      <li id= "pictures"><a href="images/corvetttaxi.jpg"><img src="images/corvetttaxi.jpg" alt="corvett taxi" ></a></li> 
+                                                      <li id= "pictures"><a href="images/porschetaxi.jpg"><img src="images/porschetaxi.jpg" alt="porsche taxi" ></a></li>                           
+                                                      <li id= "pictures"><a href="images/Ferraritaxi.jpg"><img src="images/Ferraritaxi.jpg" alt="Ferrari taxi" ></a></li>
                                			 </ul>
                          </aside> 
                     </div>                          
-        		 <div id= "rates & charges">
-               		 <h1 id= "space">Rates &amp; Charges</h1>
+        		 <div id= "rates">
+               		 <h1 id= "space">Rates</h1>
                                  <table>
                                                        <tr><th>Orlando</th><td> $39 to $59</td></tr>
                                                        <tr><th>Fort Myers</th><td>$39 to $59</td></tr> 
