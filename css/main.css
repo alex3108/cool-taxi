@@ -13,7 +13,6 @@ body {
 	margin: 0 auto;
 }
 section {
-	width: auto;
 	margin-left: 1.1111111%; /*10px/900px*/ 
 }
 h1 {
@@ -43,7 +42,7 @@ ul {
 	list-style-type: none;
 }
 li {
-	font-size: large;
+	font-size: 1em; /*16px*/
 	text-align: center;
 	width: 16.66666%;/*160px/960px*/	
 	margin: 0 auto;
@@ -68,12 +67,15 @@ table {
 #pictures {
 	      background:#FFF;	 
 		  height: auto;
-		  float: left;
 		  width: 20.83333%; /*200px/960px*/		
 }
-#pictures img {
+#logo {
+	  width: 8.33333%; /*80px/960px*/	
+}
+img {
 	         max-width: 100%;
 }
+
 #taxis {
 	    border:5px solid  #FFF;
 		text-shadow: 3px 3px #000;
@@ -107,7 +109,7 @@ footer {
 	/*=Media Queries
 ==========================================================================================*/
    /*Table Portrait size to standard 960 (devices and browsers)*/
-   @media screen and (min-width:768px) and (max-width:959px){
+    @media screen and (min-width:768px) and (max-width:959px){
     #wrapper { background-color: #1b1b1b;}
 	 p.test { font-family: Tahoma, Geneva, sans-serif;}
 	 body { background-image: url(../images/taxi%20backgroungcolor1.jpg);  }
@@ -124,7 +126,9 @@ footer {
 	 @media only screen and (max-width:479px){
     #wrapper { background-color: #2f2e2e;}
 	body { background-image: url(../images/taxibackgroung.3jpg.jpg);}
-	.social_icons { display: none}
+	.social_icons { display: none;}
+	 list { float: none;}
+	}
 	}
 	
 	
