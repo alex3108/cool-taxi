@@ -2,7 +2,146 @@
 <html lang= "en">
 	<head> 
 	<meta charset= "utf-8"/>
-      <link rel= "stylesheet" href="css/main.css">
+      <link rel= "stylesheet" title="Disabled for Preview-in-Browser: css/main.css">
+<style type="text/css">
+
+body {
+	font: 100%/1.5 "Tahoma", Geneva, sans-serif;
+	max-width: 960px;
+	margin: auto;
+	background-image: url(images/taxi%20backgroungcolor1.jpg);
+	background-repeat: repeat;
+	text-align: center;
+	font-size: 16px;
+}
+#wrapper {
+	width: 100%; /*960px*/
+	text-align: left;
+	margin: 0 auto;
+}
+section {
+	margin-left: 1.1111111%; /*10px/900px*/ 
+}
+h1 {
+	color: #0CA0DE;
+	font-style: oblique;
+	text-align: center;
+	font-size: 2.25em; /*36px*/
+	text-shadow: 1px 1px #FFFFFF;
+	}
+h2 {
+	text-align: center;
+	color: #1AB263;
+	font-size: 1.5em; /*24px*/
+	margin-top: 5.20833%; /*50px/960px*/	
+}
+h3 {
+	font-size: 1em; /*16px*/
+}
+p {
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+}
+ul {
+	width: 100%;
+	margin: 0 auto;
+	list-style-type: none;
+}
+li {
+	font-size: 1em; /*16px*/
+	text-align: center;
+	width: 16.66666%;/*160px/960px*/	
+	margin: 0 auto;
+	background: #0CA0DE;
+    float:left;
+	border:groove;
+}
+#space {
+	margin-top: 20.83333%; /*200px/960px*/	
+}
+table {
+	   width: 62.5%; /*600px/960px*/
+	   font-size: 1em; /*16px*/
+	   text-align: center;
+	   background: #0CA0DE;
+	   -moz-box-shadow: 5px 5px 5px #FFF;
+	   -webkit-box-shadow: 5px 5px 5px #FFF;
+	   box-shadow: 5px 5px 5px #FFF;
+	   margin-left:auto;
+       margin-right:auto;	   
+}
+#pictures {
+	      background:#FFF;	 
+		  height: auto;
+		  width: 20.83333%; /*200px/960px*/		
+}
+#logo {
+	  width: 8.33333%; /*80px/960px*/	
+}
+img {
+	         max-width: 100%;
+}
+
+#taxis {
+	    border:5px solid  #FFF;
+		text-shadow: 3px 3px #000;
+		width: 31.25%; /*299px/960px*/
+}	
+a:link {
+		color: #000;
+		text-align: center;
+		text-decoration: none;
+		text-align: center;
+		opacity: 0.4;
+}
+a:visited {
+			color: #000;
+}
+a:hover {
+			color: #FFF;
+			opacity: 1.0;           
+}
+a:active {
+			color: #FFF;		
+}
+footer {
+		text-align:center;
+		color: #0CA0DE;
+}
+
+	
+	
+	
+	/*=Media Queries
+==========================================================================================*/
+   /*Table Portrait size to standard 960 (devices and browsers)*/
+    @media screen and (min-width:768px) and (max-width:959px){
+    #wrapper { background-color: #806C55;}
+	 p.test { font-family: Tahoma, Geneva, sans-serif;}
+	 body { background-image: url(images/taxi%20backgroungcolor1.jpg);  }
+	}
+	
+    /*Mobile Landscape Size to Tablet Portrait (devices and browsers)*/
+	@media screen and (min-width: 480px) and (max-width:767px) {	
+    #wrapper { background-color: #6D5B45}
+	body { background-image:url(images/taxi%20backgroungcolor2.jpg);}
+	.content { float: left;}
+  }
+   
+     /*Mobile Portrait Size to TMobile Landscape Size (devices and browsers)*/
+	 @media only screen and (max-width:479px){
+    #wrapper { background-color: #5B4A36;}
+	body { background-image: url(images/taxibackgroung.3jpg.jpg);}
+	.social_icons { display: none;}
+	 list { float: none;}
+	}
+
+	
+	
+     
+
+</style>
       <meta name= "viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home</title>
 	</head>
@@ -10,8 +149,7 @@
         	<header> 
 	  			 <div id= "wrapper">
 	  			 		<img id="logo" src="images/cooltaxilogo.png" alt="logo" >
-	 			 <h1>Cool Taxi</h1>
-	 			 <h1>407 - 444 - 4444 / info@cooltaxi.com</h1>  
+	 			 <h1>Cool Taxi</h1>  
                              <nav>
                              <aside>
                                     <ul>
@@ -28,10 +166,8 @@
                  <div id= "home">
              <section> 
        		  		 <article>  
-                               		 	<br><h2><em>Anywhere &amp; Anytime</em><br>
-                               		 	  www.cooltaxi.com - www.cooltaxi.net</h2>
-                                        
-                       <img id="taxis" src="images/cooltaxi.png" alt="cool taxi" >
+                               		 	<br><h2><em>Anywhere &amp; Anytime</em></h2>
+                                 <img id="taxis" src="images/cooltaxi.png" alt="cool taxi" >
                                          <P>Cool Taxi is dedicated to providing you with a stress free airport transfer.<br>
                                          We offer late model luxury SUVs and vans.<br>
                                         All vehicles are smoke-free and GPS equiped to get you to your destination without delay.<br></p>
@@ -81,67 +217,24 @@
                                                        <tr><th>Captiva Island</th><td>$49 to $69</td></tr> 
                                                       <tr><th>Boca Grande</th><td>$55 to $69</td></tr>
                           		 </table> 
-                                                   
-        <form method= "get" action="info@cooltaxi.com">
-                           <div id= "contact">
-		    <h1>Contact</h1>
-                                    <h2> We'll get back to you
-            as soon as possible.<br>
-                                    </h2>
-                                   		 <div>
-                                    			<label for="name_first">First Name</label>
-                                                <input type="text" name="name_first" id="name_first" />
-                                        </div>
-                                        
-                                         <div>
-                                    			<label for="name_last">Last Name</label>
-                                                <input type="text" name="name_last" id="name_last" />
-                                         </div>
-                                         
-                                         <div>
-                                    			<label for="name_first">First Name</label>
-                                                <input type="text" name="name_first" id="name_first" />
-                                         </div>
-                                         
-                                         <div>
-                                    			<label for="phone">Phone Number</label>
-                                                <input type="text" name="phone" id="phone" />
-                                         </div>
-                                         
-                                         <div>
-                                    			<label for="email">Email Address</label>
-                                                <input type="text" name="email" id="email" />
-                                         </div>
-                                         
-                                         <div>
-                                    			<label for="information">Additional Information</label>
-                                         </div>
-                                         
-                                         <div id="information">
-                                    			<Select name="information" id="information">
-                                               		  <option>General Inquiry</option>
-                                                 	  <option>Special Event</option>
-                                                 	  <option>Private Tour</option>
-                                           </Select>                                              
-                                         </div>
-                                         
-                                         <div>
-                                               <label for="message">Message</label> 
-                                               <textarea rows="10 " cols="40" name="message" id="message"></textarea> 
-                                         </div>
-                                         
-                                         <div>
-                                           <label for="email">I prefer to be contacted by phone</label>
-                                           <input type="checkbox" name="contact_phone" id="contact_phone" />
-                                         </div>
-                                         
-                                          <div>
-                                               <button type="submit" name="submit" class="button">Send
-                                               Message</button>
-                                         </div>
-            </form>                                                                                     
-        
-      
+                      </div>                               
+          <div id= "contact">
+         					 <h1>Contact</h1>
+                                    <p>COOL TAXI VAN<br>
+                                      Private Taxi service in Florida<br>
+                                      Servicio personalizado de taxi en la Florida</p>
+                                    <p>COOL TAXI<br>
+                                      TAXI COOL</p>
+                                    <p>Email<br>
+                                      info@cooltaxi.com</p>
+                                    <p>Last minute requests<br>
+                                      407-441-4444<br>
+                                    </p>
+                                    <p>www.cooltaxi.com<br>
+                                      www.cooltaxi.net</p>
+                                    <p>COOL TAXI<br>
+                                        AXI COOLI</p>
+    		    </div>           
              </div><!--End wrapper-->
 				 <footer>
  							 <h3>&copy; 2013 cooltaxi.com</h3>
