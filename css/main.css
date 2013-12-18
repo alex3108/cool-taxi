@@ -74,10 +74,11 @@ th {
 	padding: 0.3em;
 }
 form {
-	   width: 83.33333%; /*800px/960px*/
+	   width: 62.5%; /*600px/960px*/
 	   background: #7A4D24;
 	   margin-top: 10.41666%; /*100px/960px*/
-	   
+	   margin-left:auto;
+       margin-right:auto;		   
 }
 label {
 	color: #0CA0DE;
